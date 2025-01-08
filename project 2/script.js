@@ -6,7 +6,7 @@ const msg = document.querySelector("#msg");
 const userPara1 = document.querySelector("#user-score");
 const userPara2 = document.querySelector("#comp-score");
 
-const genComChoice = () => {
+const genComChoice = () => {s
         const options =["rock","paper","scissors"];
         const randIdx = Math.floor(Math.random() * 3);
         return options[randIdx];
@@ -58,31 +58,9 @@ const playGame = (userChoice) => {
 
 }
 
-choices.forEach((choice) => {
+choices.forEach(choice => {
     choice.addEventListener("click", () => {
         const userChoice = choice.getAttribute('id');
         playGame(userChoice);
     });
 });
-
-
-
-
-
-// let score1 = 0;
-// let btnSum = document.getElementById("btnSum");
-// let btnSub= document.getElementById("btnSub");
-// let scoreIN = document.getElementById('score-para')
-
-// btnSum.addEventListener('click',() => {
-//     score1++
-//     scoreIN.innerText = score1;
-// })
-// btnSub.addEventListener('click',() => {
-    
-//     score1--
-//     scoreIN.innerText = score1;
-
-// })
-
-// // 
